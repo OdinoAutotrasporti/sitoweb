@@ -20,13 +20,13 @@ export default function Hero() {
       </div>
 
       {/* Right: logo panel */}
-      <div className="w-full sm:w-1/2 h-[180px] sm:h-full bg-navy flex items-center justify-center px-8">
+      <div className="w-full sm:w-1/2 h-[64px] sm:h-full bg-navy flex items-center justify-center px-6">
         <Image
           src="/logo.png"
           alt="Odino Autotrasporti"
           width={300}
           height={85}
-          className="w-[140px] sm:w-[200px] lg:w-[260px] max-w-[65%] h-auto object-contain"
+          className="w-[110px] sm:w-[200px] lg:w-[260px] max-w-[65%] h-auto object-contain"
           priority
         />
       </div>
