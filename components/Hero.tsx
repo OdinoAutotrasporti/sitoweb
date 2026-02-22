@@ -8,7 +8,7 @@ export default function Hero() {
       aria-label="Intestazione principale"
     >
       {/* Left: photo */}
-      <div className="relative w-full sm:w-1/2 h-[220px] sm:h-full">
+      <div className="relative w-full sm:w-1/2 h-[260px] sm:h-full">
         <Image
           src="/hero.jpg"
           alt="Odino Autotrasporti – trasporto merci su strada"
@@ -20,13 +20,26 @@ export default function Hero() {
       </div>
 
       {/* Right: logo panel */}
-      <div className="w-full sm:w-1/2 h-[64px] sm:h-full bg-navy flex items-center justify-center px-6">
+      <div className="w-full sm:w-1/2 h-[24px] sm:h-full bg-navy flex sm:items-center sm:justify-center sm:px-6 relative">
+        {/* Mobile: logo floats below the navy strip onto the light background */}
+        <div className="sm:hidden absolute left-1/2 -translate-x-1/2 top-full mt-4 z-10">
+          <Image
+            src="/logo.png"
+            alt="Odino Autotrasporti"
+            width={300}
+            height={85}
+            className="w-[120px] h-auto object-contain"
+            priority
+          />
+        </div>
+
+        {/* Desktop: logo centered inside the full-height navy panel */}
         <Image
           src="/logo.png"
           alt="Odino Autotrasporti"
           width={300}
           height={85}
-          className="w-[110px] sm:w-[200px] lg:w-[260px] max-w-[65%] h-auto object-contain"
+          className="hidden sm:block w-[200px] lg:w-[260px] max-w-[65%] h-auto object-contain"
           priority
         />
       </div>
