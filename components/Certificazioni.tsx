@@ -85,7 +85,7 @@ export default function Certificazioni() {
     <section
       id="certificazioni"
       ref={sectionRef}
-      className="bg-navy py-20 lg:py-32 relative overflow-hidden"
+      className="bg-navy py-14 sm:py-20 lg:py-32 relative overflow-hidden scroll-mt-16 lg:scroll-mt-20"
       aria-labelledby="certificazioni-heading"
     >
       {/* Background pattern */}
@@ -106,7 +106,7 @@ export default function Certificazioni() {
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div
-          className={`mb-16 text-center transition-all duration-700 ${
+          className={`mb-10 sm:mb-16 text-center transition-all duration-700 ${
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
@@ -119,7 +119,7 @@ export default function Certificazioni() {
           </div>
           <h2
             id="certificazioni-heading"
-            className="font-display text-4xl lg:text-5xl xl:text-6xl font-400 text-light leading-tight"
+            className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-400 text-light leading-tight"
           >
             Qualità verificata,
             <br />

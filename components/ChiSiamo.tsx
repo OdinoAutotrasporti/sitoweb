@@ -39,7 +39,7 @@ function StatCard({ stat, animate }: { stat: StatItem; animate: boolean }) {
   return (
     <div className="text-center lg:text-left border-b lg:border-b-0 lg:border-r border-silver/20 last:border-0 pb-8 lg:pb-0 lg:pr-10 last:pr-0">
       <div className="flex items-start justify-center lg:justify-start gap-1 mb-2">
-        <span className="font-display text-6xl lg:text-7xl xl:text-8xl font-300 text-navy leading-none">
+        <span className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-300 text-navy leading-none">
           {stat.value >= 1000
             ? `${Math.floor(count / 1000).toLocaleString('it-IT')}.${String(count % 1000).padStart(3, '0')}`
             : count}
@@ -82,13 +82,13 @@ export default function ChiSiamo() {
     <section
       id="chi-siamo"
       ref={sectionRef}
-      className="bg-light py-20 lg:py-32"
+      className="bg-light py-14 sm:py-20 lg:py-32 scroll-mt-16 lg:scroll-mt-20"
       aria-labelledby="chi-siamo-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section label */}
         <div
-          className={`flex items-center gap-4 mb-16 transition-all duration-700 ${
+          className={`flex items-center gap-4 mb-10 sm:mb-16 transition-all duration-700 ${
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
@@ -120,7 +120,7 @@ export default function ChiSiamo() {
           >
             <h2
               id="chi-siamo-heading"
-              className="font-display text-4xl lg:text-5xl xl:text-6xl font-400 text-navy leading-tight mb-8"
+              className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-400 text-navy leading-tight mb-8"
             >
               Una famiglia,
               <br />

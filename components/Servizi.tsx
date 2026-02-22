@@ -90,13 +90,13 @@ export default function Servizi() {
     <section
       id="servizi"
       ref={sectionRef}
-      className="bg-white py-20 lg:py-32"
+      className="bg-white py-14 sm:py-20 lg:py-32 scroll-mt-16 lg:scroll-mt-20"
       aria-labelledby="servizi-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div
-          className={`mb-16 transition-all duration-700 ${
+          className={`mb-10 sm:mb-16 transition-all duration-700 ${
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
@@ -108,7 +108,7 @@ export default function Servizi() {
           </div>
           <h2
             id="servizi-heading"
-            className="font-display text-4xl lg:text-5xl xl:text-6xl font-400 text-navy leading-tight max-w-2xl"
+            className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-400 text-navy leading-tight max-w-2xl"
           >
             Soluzioni complete
             <br />

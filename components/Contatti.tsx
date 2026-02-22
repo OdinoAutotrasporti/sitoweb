@@ -84,20 +84,20 @@ export default function Contatti() {
   const inputClass = (field: keyof FormErrors) =>
     `w-full bg-navy/5 border ${
       errors[field] ? 'border-red-400/70' : 'border-navy/20 focus:border-gold/60'
-    } px-4 py-3 font-body text-sm text-navy placeholder:text-navy/30
+    } px-4 py-3.5 font-body text-sm text-navy placeholder:text-navy/30
     outline-none transition-colors duration-200`
 
   return (
     <section
       id="contatti"
       ref={sectionRef}
-      className="bg-light py-20 lg:py-32"
+      className="bg-light py-14 sm:py-20 lg:py-32 scroll-mt-16 lg:scroll-mt-20"
       aria-labelledby="contatti-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div
-          className={`mb-16 transition-all duration-700 ${
+          className={`mb-10 sm:mb-16 transition-all duration-700 ${
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
@@ -109,7 +109,7 @@ export default function Contatti() {
           </div>
           <h2
             id="contatti-heading"
-            className="font-display text-4xl lg:text-5xl xl:text-6xl font-400 text-navy leading-tight"
+            className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-400 text-navy leading-tight"
           >
             Parliamo del
             <br />
@@ -290,7 +290,7 @@ export default function Contatti() {
                       onChange={handleChange}
                       placeholder="+39 000 0000000"
                       autoComplete="tel"
-                      className="w-full bg-navy/5 border border-navy/20 focus:border-gold/60 px-4 py-3 font-body text-sm text-navy placeholder:text-navy/30 outline-none transition-colors duration-200"
+                      className="w-full bg-navy/5 border border-navy/20 focus:border-gold/60 px-4 py-3.5 font-body text-sm text-navy placeholder:text-navy/30 outline-none transition-colors duration-200"
                     />
                   </div>
                   <div>

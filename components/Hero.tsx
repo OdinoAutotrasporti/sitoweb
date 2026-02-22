@@ -4,12 +4,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex flex-col sm:flex-row w-full mt-16 lg:mt-20"
-      style={{ height: '500px' }}
+      className="flex flex-col sm:flex-row w-full mt-16 lg:mt-20 scroll-mt-16 lg:scroll-mt-20 sm:h-[480px] lg:h-[500px]"
       aria-label="Intestazione principale"
     >
       {/* Left: photo */}
-      <div className="relative w-full sm:w-1/2 h-[250px] sm:h-full">
+      <div className="relative w-full sm:w-1/2 h-[220px] sm:h-full">
         <Image
           src="/hero.jpg"
           alt="Odino Autotrasporti – trasporto merci su strada"
@@ -21,13 +20,13 @@ export default function Hero() {
       </div>
 
       {/* Right: logo panel */}
-      <div className="w-full sm:w-1/2 h-[250px] sm:h-full bg-navy flex items-center justify-center px-8">
+      <div className="w-full sm:w-1/2 h-[180px] sm:h-full bg-navy flex items-center justify-center px-8">
         <Image
           src="/logo.png"
           alt="Odino Autotrasporti"
           width={300}
           height={85}
-          className="w-[350px] max-w-full h-auto object-contain"
+          className="w-[140px] sm:w-[200px] lg:w-[260px] max-w-[65%] h-auto object-contain"
           priority
         />
       </div>

@@ -152,13 +152,13 @@ export default function Flotta() {
     <section
       id="flotta"
       ref={sectionRef}
-      className="bg-navy py-20 lg:py-32"
+      className="bg-navy py-14 sm:py-20 lg:py-32 scroll-mt-16 lg:scroll-mt-20"
       aria-labelledby="flotta-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div
-          className={`mb-16 transition-all duration-700 ${
+          className={`mb-10 sm:mb-16 transition-all duration-700 ${
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
@@ -170,7 +170,7 @@ export default function Flotta() {
           </div>
           <h2
             id="flotta-heading"
-            className="font-display text-4xl lg:text-5xl xl:text-6xl font-400 text-light leading-tight max-w-2xl"
+            className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-400 text-light leading-tight max-w-2xl"
           >
             Mezzi moderni,
             <br />
