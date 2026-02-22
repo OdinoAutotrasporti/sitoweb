@@ -3,7 +3,6 @@ import Hero from '@/components/Hero'
 import ChiSiamo from '@/components/ChiSiamo'
 import Servizi from '@/components/Servizi'
 import Flotta from '@/components/Flotta'
-import Certificazioni from '@/components/Certificazioni'
 import Contatti from '@/components/Contatti'
 import Footer from '@/components/Footer'
 
@@ -23,8 +22,6 @@ export default function Home() {
         <Servizi />
         <Divider />
         <Flotta />
-        <Divider />
-        <Certificazioni />
         <Divider />
         <Contatti />
       </main>

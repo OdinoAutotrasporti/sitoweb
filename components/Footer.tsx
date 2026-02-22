@@ -1,10 +1,11 @@
 'use client'
 
+import Image from 'next/image'
+
 const footerLinks = [
   { label: 'Chi Siamo', href: '#chi-siamo' },
   { label: 'Servizi', href: '#servizi' },
   { label: 'Flotta', href: '#flotta' },
-  { label: 'Certificazioni', href: '#certificazioni' },
   { label: 'Contatti', href: '#contatti' },
 ]
 
@@ -21,13 +22,13 @@ export default function Footer() {
           {/* Brand column */}
           <div className="md:col-span-1">
             <div className="mb-6">
-              <span className="font-condensed text-3xl font-700 tracking-widest text-light uppercase relative inline-block">
-                ODINO
-                <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gold" aria-hidden="true" />
-              </span>
-              <p className="font-condensed text-xs tracking-[0.3em] uppercase text-silver/40 mt-1">
-                Autotrasporti
-              </p>
+              <Image
+                src="/logo.png"
+                alt="Odino Autotrasporti"
+                width={160}
+                height={48}
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="font-body text-sm text-silver/50 leading-relaxed mb-6 max-w-xs">
               Trasporto merci su strada in Piemonte, Liguria e tutta Italia.

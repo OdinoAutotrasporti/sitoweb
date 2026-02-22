@@ -26,6 +26,10 @@ const barlow = Barlow({
 
 export const metadata: Metadata = {
   title: 'Odino Autotrasporti – Trasporto Merci Professionale dal 1987',
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
   description:
     'Odino Autotrasporti Srl: trasporto merci su strada, distribuzione regionale e logistica in Piemonte, Liguria e tutta Italia. Affidabili dal 1987.',
   keywords: [

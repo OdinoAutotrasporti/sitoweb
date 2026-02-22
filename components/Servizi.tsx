@@ -90,7 +90,7 @@ export default function Servizi() {
     <section
       id="servizi"
       ref={sectionRef}
-      className="bg-navy py-20 lg:py-32"
+      className="bg-white py-20 lg:py-32"
       aria-labelledby="servizi-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -108,7 +108,7 @@ export default function Servizi() {
           </div>
           <h2
             id="servizi-heading"
-            className="font-display text-4xl lg:text-5xl xl:text-6xl font-400 text-light leading-tight max-w-2xl"
+            className="font-display text-4xl lg:text-5xl xl:text-6xl font-400 text-navy leading-tight max-w-2xl"
           >
             Soluzioni complete
             <br />
@@ -117,11 +117,11 @@ export default function Servizi() {
         </div>
 
         {/* Cards grid */}
-        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-px bg-silver/10">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-px bg-navy/5">
           {services.map((service, i) => (
             <article
               key={service.title}
-              className={`group relative bg-navy p-8 lg:p-10 flex flex-col gap-6 cursor-default
+              className={`group relative bg-light p-8 lg:p-10 flex flex-col gap-6 cursor-default
                 border border-transparent hover:border-gold/60 hover:-translate-y-1
                 transition-all duration-300 shadow-none hover:shadow-lg hover:shadow-gold/10
                 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
@@ -138,16 +138,16 @@ export default function Servizi() {
 
               {/* Content */}
               <div>
-                <h3 className="font-condensed text-base font-600 tracking-widest uppercase text-light mb-3">
+                <h3 className="font-condensed text-base font-600 tracking-widest uppercase text-navy mb-3">
                   {service.title}
                 </h3>
-                <p className="font-body text-sm text-silver/60 group-hover:text-silver/80 leading-relaxed transition-colors duration-300">
+                <p className="font-body text-sm text-navy/60 group-hover:text-navy/80 leading-relaxed transition-colors duration-300">
                   {service.description}
                 </p>
               </div>
 
               {/* Arrow */}
-              <div className="mt-auto pt-4 border-t border-silver/10 group-hover:border-gold/20 transition-colors duration-300">
+              <div className="mt-auto pt-4 border-t border-navy/10 group-hover:border-gold/20 transition-colors duration-300">
                 <span className="font-condensed text-xs tracking-widest uppercase text-gold/40 group-hover:text-gold transition-colors duration-300 flex items-center gap-2">
                   Scopri
                   <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

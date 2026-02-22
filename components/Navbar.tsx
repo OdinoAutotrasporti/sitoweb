@@ -1,13 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
+import Image from 'next/image'
 
 const navLinks = [
   { label: 'Chi Siamo', href: '#chi-siamo' },
   { label: 'Servizi', href: '#servizi' },
   { label: 'Flotta', href: '#flotta' },
-  { label: 'Certificazioni', href: '#certificazioni' },
   { label: 'Contatti', href: '#contatti' },
 ]
 
@@ -35,8 +34,8 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'bg-dark/90 backdrop-blur-md border-b border-gold/20 shadow-lg shadow-dark/50'
-            : 'bg-dark/60 backdrop-blur-sm'
+            ? 'bg-light/95 backdrop-blur-md border-b border-navy/10 shadow-sm'
+            : 'bg-light/80 backdrop-blur-sm'
         }`}
         role="banner"
       >
@@ -48,16 +47,17 @@ export default function Navbar() {
           <a
             href="#"
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-            className="flex items-center gap-3 group"
+            className="flex items-center"
             aria-label="Odino Autotrasporti – torna in cima"
           >
-            <span className="font-condensed text-2xl lg:text-3xl font-700 tracking-widest text-light uppercase relative">
-              ODINO
-              <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gold group-hover:w-full transition-all duration-300" />
-            </span>
-            <span className="hidden sm:block font-condensed text-xs tracking-[0.3em] text-silver/70 uppercase pt-1">
-              Autotrasporti
-            </span>
+            <Image
+              src="/logo.png"
+              alt="Odino Autotrasporti"
+              width={160}
+              height={48}
+              className="h-10 lg:h-12 w-auto object-contain"
+              priority
+            />
           </a>
 
           {/* Desktop nav */}
@@ -67,7 +67,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="font-condensed text-sm font-500 tracking-widest uppercase text-silver/80 hover:text-gold transition-colors duration-200 relative group"
+                  className="font-condensed text-sm font-500 tracking-widest uppercase text-navy/70 hover:text-gold transition-colors duration-200 relative group"
                 >
                   {link.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-gold group-hover:w-full transition-all duration-300" />
@@ -89,7 +89,7 @@ export default function Navbar() {
           {/* Hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden flex flex-col gap-1.5 p-2 text-silver"
+            className="lg:hidden flex flex-col gap-1.5 p-2 text-navy"
             aria-label={menuOpen ? 'Chiudi menu' : 'Apri menu'}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
@@ -112,12 +112,12 @@ export default function Navbar() {
         }`}
       >
         <div
-          className="absolute inset-0 bg-dark/80 backdrop-blur-sm"
+          className="absolute inset-0 bg-navy/30 backdrop-blur-sm"
           onClick={() => setMenuOpen(false)}
           aria-hidden="true"
         />
         <nav
-          className={`absolute top-16 left-0 right-0 bg-dark border-t border-gold/30 transition-all duration-300 ${
+          className={`absolute top-16 left-0 right-0 bg-light border-t border-navy/10 shadow-lg transition-all duration-300 ${
             menuOpen ? 'translate-y-0' : '-translate-y-4'
           }`}
         >
@@ -127,7 +127,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="block font-condensed text-base font-500 tracking-widest uppercase text-silver/80 hover:text-gold hover:bg-navy/40 px-6 py-4 transition-colors duration-200"
+                  className="block font-condensed text-base font-500 tracking-widest uppercase text-navy/70 hover:text-gold hover:bg-silver/30 px-6 py-4 transition-colors duration-200"
                 >
                   {link.label}
                 </a>
