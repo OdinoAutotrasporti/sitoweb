@@ -20,20 +20,20 @@ export default function Hero() {
       </div>
 
       {/* Right: logo panel */}
-      <div className="w-full sm:w-1/2 h-[24px] sm:h-full bg-navy flex sm:items-center sm:justify-center sm:px-6 relative">
-        {/* Mobile: logo floats below the navy strip onto the light background */}
-        <div className="sm:hidden absolute left-1/2 -translate-x-1/2 top-full mt-4 z-10">
+      <div className="w-full sm:w-1/2 h-[20px] sm:h-full bg-navy flex sm:items-center sm:justify-center sm:px-6 relative overflow-visible">
+        {/* Mobile: logo mostly inside navy panel, small peek (~8px) below */}
+        <div className="sm:hidden flex justify-center items-start pt-[1px] w-full overflow-visible">
           <Image
             src="/logo.png"
             alt="Odino Autotrasporti"
             width={300}
             height={85}
-            className="w-[120px] h-auto object-contain"
+            className="w-[100px] h-auto object-contain relative z-10"
             priority
           />
         </div>
 
-        {/* Desktop: logo centered inside the full-height navy panel */}
+        {/* Desktop: logo centered inside full-height navy panel */}
         <Image
           src="/logo.png"
           alt="Odino Autotrasporti"

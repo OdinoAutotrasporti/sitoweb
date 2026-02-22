@@ -82,7 +82,7 @@ export default function ChiSiamo() {
     <section
       id="chi-siamo"
       ref={sectionRef}
-      className="bg-light pt-20 pb-14 sm:py-20 lg:py-32 scroll-mt-16 lg:scroll-mt-20"
+      className="bg-light py-14 sm:py-20 lg:py-32 scroll-mt-16 lg:scroll-mt-20"
       aria-labelledby="chi-siamo-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
