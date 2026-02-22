@@ -15,9 +15,9 @@ const config: Config = {
         light: '#F4F5F6',
       },
       fontFamily: {
-        display: ['var(--font-display)', 'Georgia', 'serif'],
+        display: ['var(--font-display)', 'sans-serif'],
         condensed: ['var(--font-condensed)', 'sans-serif'],
-        body: ['var(--font-body)', 'sans-serif'],
+        body: ['var(--font-display)', 'sans-serif'],
       },
       backgroundImage: {
         'metal': `repeating-linear-gradient(

@@ -1,26 +1,19 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, Barlow_Condensed, Barlow } from 'next/font/google'
+import { Saira, Saira_Condensed } from 'next/font/google'
 import './globals.css'
 
-const cormorantGaramond = Cormorant_Garamond({
+const saira = Saira({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700', '800'],
   style: ['normal', 'italic'],
   variable: '--font-display',
   display: 'swap',
 })
 
-const barlowCondensed = Barlow_Condensed({
+const sairaCondensed = Saira_Condensed({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700', '800'],
   variable: '--font-condensed',
-  display: 'swap',
-})
-
-const barlow = Barlow({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  variable: '--font-body',
   display: 'swap',
 })
 
@@ -57,7 +50,7 @@ export default function RootLayout({
   return (
     <html
       lang="it"
-      className={`${cormorantGaramond.variable} ${barlowCondensed.variable} ${barlow.variable}`}
+      className={`${saira.variable} ${sairaCondensed.variable}`}
     >
       <body className="font-body antialiased">{children}</body>
     </html>

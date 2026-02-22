@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-condensed: 'Barlow Condensed', sans-serif;
-  --font-body: 'Barlow', sans-serif;
+  --font-display: 'Saira', sans-serif;
+  --font-condensed: 'Saira Condensed', sans-serif;
 }
 
 html {
@@ -19,7 +18,7 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-display);
   background-color: #F4F5F6;
   color: #1B2A41;
   -webkit-font-smoothing: antialiased;

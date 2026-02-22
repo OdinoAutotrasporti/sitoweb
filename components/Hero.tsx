@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex flex-col sm:flex-row w-full"
+      className="flex flex-col sm:flex-row w-full mt-16 lg:mt-20"
       style={{ height: '500px' }}
       aria-label="Intestazione principale"
     >
@@ -25,9 +25,9 @@ export default function Hero() {
         <Image
           src="/logo.png"
           alt="Odino Autotrasporti"
-          width={320}
-          height={96}
-          className="w-auto max-w-[280px] sm:max-w-[360px] h-auto object-contain"
+          width={350}
+          height={105}
+          className="w-[350px] max-w-full h-auto object-contain"
           priority
         />
       </div>
