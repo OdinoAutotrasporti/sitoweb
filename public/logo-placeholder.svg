@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <rect width="200" height="60" fill="#121820"/>
+  <!-- Gold underline accent -->
+  <rect x="10" y="46" width="60" height="2" fill="#A88E5E"/>
+  <!-- ODINO wordmark -->
+  <text x="10" y="40"
+    font-family="Georgia, serif"
+    font-size="32"
+    font-weight="700"
+    letter-spacing="6"
+    fill="#F4F5F6">ODINO</text>
+  <!-- Autotrasporti subtitle -->
+  <text x="10" y="58"
+    font-family="Arial, sans-serif"
+    font-size="9"
+    font-weight="400"
+    letter-spacing="4"
+    fill="#A88E5E">AUTOTRASPORTI</text>
+</svg>
