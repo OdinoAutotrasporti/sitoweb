@@ -152,7 +152,7 @@ export default function Flotta() {
     <section
       id="flotta"
       ref={sectionRef}
-      className="bg-light py-20 lg:py-32"
+      className="bg-navy py-20 lg:py-32"
       aria-labelledby="flotta-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -170,13 +170,13 @@ export default function Flotta() {
           </div>
           <h2
             id="flotta-heading"
-            className="font-display text-4xl lg:text-5xl xl:text-6xl font-400 text-navy leading-tight max-w-2xl"
+            className="font-display text-4xl lg:text-5xl xl:text-6xl font-400 text-light leading-tight max-w-2xl"
           >
             Mezzi moderni,
             <br />
             <span className="font-600 italic">manutenzione rigorosa.</span>
           </h2>
-          <p className="mt-6 font-body text-base text-navy/60 max-w-xl">
+          <p className="mt-6 font-body text-base text-silver/60 max-w-xl">
             Ogni veicolo è verificato, assicurato e conforme alle normative europee più
             recenti. Investiamo nella flotta perché la qualità del mezzo riflette la
             qualità del servizio.
@@ -188,20 +188,20 @@ export default function Flotta() {
           {vehicles.map((vehicle, i) => (
             <article
               key={vehicle.name}
-              className={`group relative bg-white border border-silver/60 p-6 flex flex-col gap-6
-                hover:border-gold/60 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/10
+              className={`group relative bg-dark/40 border border-silver/20 p-6 flex flex-col gap-6
+                hover:border-gold/60 hover:-translate-y-1 hover:shadow-xl hover:shadow-dark/40
                 shimmer-card transition-all duration-300
                 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
               `}
               style={{ transitionDelay: visible ? `${i * 120}ms` : '0ms' }}
             >
               {/* Badge */}
-              <span className="absolute top-4 right-4 font-condensed text-[10px] tracking-widest uppercase px-2 py-1 bg-navy/5 text-navy/40 group-hover:bg-gold/10 group-hover:text-gold transition-colors duration-300">
+              <span className="absolute top-4 right-4 font-condensed text-[10px] tracking-widest uppercase px-2 py-1 bg-light/5 text-light/40 group-hover:bg-gold/10 group-hover:text-gold transition-colors duration-300">
                 {vehicle.badge}
               </span>
 
               {/* Vehicle illustration */}
-              <div className="text-navy/30 group-hover:text-gold/50 transition-colors duration-300 pt-4">
+              <div className="text-silver/30 group-hover:text-gold/50 transition-colors duration-300 pt-4">
                 {vehicle.icon}
               </div>
 
@@ -210,19 +210,19 @@ export default function Flotta() {
                 <p className="font-condensed text-[10px] tracking-[0.35em] uppercase text-gold/70 mb-1">
                   {vehicle.category}
                 </p>
-                <h3 className="font-condensed text-lg font-700 tracking-wide uppercase text-navy">
+                <h3 className="font-condensed text-lg font-700 tracking-wide uppercase text-light">
                   {vehicle.name}
                 </h3>
               </div>
 
               {/* Specs */}
-              <div className="grid grid-cols-2 gap-3 mt-auto border-t border-silver/40 pt-5 group-hover:border-gold/20 transition-colors duration-300">
+              <div className="grid grid-cols-2 gap-3 mt-auto border-t border-silver/20 pt-5 group-hover:border-gold/20 transition-colors duration-300">
                 {vehicle.specs.map((spec) => (
                   <div key={spec.label}>
-                    <p className="font-condensed text-[10px] tracking-widest uppercase text-navy/40 mb-0.5">
+                    <p className="font-condensed text-[10px] tracking-widest uppercase text-silver/40 mb-0.5">
                       {spec.label}
                     </p>
-                    <p className="font-condensed text-sm font-600 text-navy">
+                    <p className="font-condensed text-sm font-600 text-light">
                       {spec.value}
                     </p>
                   </div>
@@ -234,7 +234,7 @@ export default function Flotta() {
 
         {/* Note */}
         <p
-          className={`mt-10 text-center font-body text-sm text-navy/40 transition-all duration-700 delay-500 ${
+          className={`mt-10 text-center font-body text-sm text-silver/40 transition-all duration-700 delay-500 ${
             visible ? 'opacity-100' : 'opacity-0'
           }`}
         >

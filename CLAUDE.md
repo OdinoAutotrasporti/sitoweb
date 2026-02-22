@@ -22,7 +22,6 @@ Obiettivi: Velocità, semplicità, credibilità istituzionale. Nessun acquisto o
 | `navy`    | `#1B2A41` | Testo, bordi, elementi strutturali            |
 | `silver`  | `#D1D5D8` | Sfondi medi, toni intermedi                   |
 | `gold`    | `#A88E5E` | Accenti, CTA, linee decorative                |
-| `dark`    | `#121820` | Ombre profonde, footer, hero                  |
 | `light`   | `#F4F5F6` | Highlights luminosi, sezioni pulite           |
 
 ---
@@ -135,3 +134,5 @@ next.config.js      ← output: 'export', images unoptimized
 tailwind.config.ts  ← colori custom, font family, keyframes
 tsconfig.json
 ```
+## Final git commit instruction
+at the end of each amendment or modification to the website, when completed all the step, give a suggestion on the best git commit description to adopt

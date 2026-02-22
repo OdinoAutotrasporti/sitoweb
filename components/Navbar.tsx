@@ -34,8 +34,8 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'bg-light/95 backdrop-blur-md border-b border-navy/10 shadow-sm'
-            : 'bg-light/80 backdrop-blur-sm'
+            ? 'bg-navy shadow-lg shadow-navy/40 border-b border-gold/20'
+            : 'bg-navy border-b border-gold/10'
         }`}
         role="banner"
       >
@@ -67,7 +67,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="font-condensed text-sm font-500 tracking-widest uppercase text-navy/70 hover:text-gold transition-colors duration-200 relative group"
+                  className="font-condensed text-sm font-500 tracking-widest uppercase text-light/70 hover:text-gold transition-colors duration-200 relative group"
                 >
                   {link.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-gold group-hover:w-full transition-all duration-300" />
@@ -89,7 +89,7 @@ export default function Navbar() {
           {/* Hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden flex flex-col gap-1.5 p-2 text-navy"
+            className="lg:hidden flex flex-col gap-1.5 p-2 text-light"
             aria-label={menuOpen ? 'Chiudi menu' : 'Apri menu'}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
@@ -112,12 +112,12 @@ export default function Navbar() {
         }`}
       >
         <div
-          className="absolute inset-0 bg-navy/30 backdrop-blur-sm"
+          className="absolute inset-0 bg-dark/60 backdrop-blur-sm"
           onClick={() => setMenuOpen(false)}
           aria-hidden="true"
         />
         <nav
-          className={`absolute top-16 left-0 right-0 bg-light border-t border-navy/10 shadow-lg transition-all duration-300 ${
+          className={`absolute top-16 left-0 right-0 bg-navy border-t border-gold/20 shadow-xl transition-all duration-300 ${
             menuOpen ? 'translate-y-0' : '-translate-y-4'
           }`}
         >
@@ -127,7 +127,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="block font-condensed text-base font-500 tracking-widest uppercase text-navy/70 hover:text-gold hover:bg-silver/30 px-6 py-4 transition-colors duration-200"
+                  className="block font-condensed text-base font-500 tracking-widest uppercase text-light/70 hover:text-gold hover:bg-light/5 px-6 py-4 transition-colors duration-200"
                 >
                   {link.label}
                 </a>
