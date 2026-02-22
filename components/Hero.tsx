@@ -25,8 +25,8 @@ export default function Hero() {
         <Image
           src="/logo.png"
           alt="Odino Autotrasporti"
-          width={350}
-          height={105}
+          width={300}
+          height={85}
           className="w-[350px] max-w-full h-auto object-contain"
           priority
         />
