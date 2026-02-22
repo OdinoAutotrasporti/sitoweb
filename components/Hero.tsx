@@ -22,13 +22,13 @@ export default function Hero() {
       {/* Right: logo panel */}
       <div className="w-full sm:w-1/2 h-[20px] sm:h-full bg-navy flex sm:items-center sm:justify-center sm:px-6 relative overflow-visible">
         {/* Mobile: logo mostly inside navy panel, small peek (~8px) below */}
-        <div className="sm:hidden flex justify-center items-start pt-[1px] w-full overflow-visible">
+        <div className="sm:hidden flex justify-center items-start pt-[10px] w-full overflow-visible">
           <Image
             src="/logo.png"
             alt="Odino Autotrasporti"
-            width={300}
-            height={85}
-            className="w-[100px] h-auto object-contain relative z-10"
+            width={50}
+            height={25}
+            className="w-[50px] h-auto object-contain relative z-10"
             priority
           />
         </div>
