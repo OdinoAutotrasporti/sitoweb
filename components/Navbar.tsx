@@ -13,25 +13,43 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [heroVisible, setHeroVisible] = useState(true)
+  const [logoProgress, setLogoProgress] = useState(0) // 0 = left logo, 1 = center logo
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40)
+    const NAV_H = 64
+    const FADE_RANGE = 120
+
+    const isMobileView = () => window.innerWidth < 640
+
+    const updateLogo = () => {
+      if (!isMobileView()) { setLogoProgress(0); return }
+      const hero = document.getElementById('hero')
+      if (!hero) return
+      const bottom = hero.getBoundingClientRect().bottom
+      const raw = (NAV_H + FADE_RANGE - bottom) / FADE_RANGE
+      setLogoProgress(Math.min(1, Math.max(0, raw)))
+    }
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 40)
+      updateLogo()
+    }
+
+    const handleResize = () => {
+      setIsMobile(isMobileView())
+      updateLogo()
+    }
+
+    setIsMobile(isMobileView())
+    handleScroll()
+
     window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  // Mobile-only: swap logo when hero scrolls out of view
-  useEffect(() => {
-    if (window.innerWidth >= 640) return
-    const hero = document.getElementById('hero')
-    if (!hero) return
-    const observer = new IntersectionObserver(
-      ([entry]) => setHeroVisible(entry.isIntersecting),
-      { threshold: 0 }
-    )
-    observer.observe(hero)
-    return () => observer.disconnect()
+    window.addEventListener('resize', handleResize, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleResize)
+    }
   }, [])
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -57,13 +75,12 @@ export default function Navbar() {
           className="relative max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16 lg:h-20"
           aria-label="Navigazione principale"
         >
-          {/* Logo sinistra — si nasconde su mobile quando l'hero esce dallo schermo */}
+          {/* Logo sinistra — sfuma su mobile mentre l'hero scorre fuori */}
           <a
             href="#"
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-            className={`flex items-center transition-opacity duration-500 sm:opacity-100 sm:pointer-events-auto ${
-              heroVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
-            }`}
+            style={isMobile ? { opacity: 1 - logoProgress } : undefined}
+            className={`flex items-center ${isMobile && logoProgress > 0.8 ? 'pointer-events-none' : ''}`}
             aria-label="Odino Autotrasporti – torna in cima"
           >
             <Image
@@ -76,12 +93,15 @@ export default function Navbar() {
             />
           </a>
 
-          {/* Logo centrato — appare su mobile quando l'hero esce dallo schermo */}
+          {/* Logo centrato — appare su mobile con fade + slide mentre l'hero esce */}
           <div
-            aria-hidden={heroVisible}
-            className={`sm:hidden absolute left-1/2 -translate-x-1/2 transition-opacity duration-500 ${
-              heroVisible ? 'opacity-0 pointer-events-none' : 'opacity-100'
-            }`}
+            aria-hidden={logoProgress < 0.5}
+            style={isMobile ? {
+              opacity: logoProgress,
+              transform: `translateY(${(1 - logoProgress) * -8}px)`,
+              willChange: 'opacity, transform',
+            } : undefined}
+            className={`sm:hidden absolute left-1/2 -translate-x-1/2 ${logoProgress < 0.2 ? 'pointer-events-none' : ''}`}
           >
             <Image
               src="/logo.png"

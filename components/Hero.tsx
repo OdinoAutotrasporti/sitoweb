@@ -28,7 +28,7 @@ export default function Hero() {
             alt="Odino Autotrasporti"
             width={50}
             height={25}
-            className="w-[50px] h-auto object-contain relative z-10"
+            className="w-[35px] h-auto object-contain relative z-10"
             priority
           />
         </div>
