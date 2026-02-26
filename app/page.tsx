@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
+import FlyingLogo from '@/components/FlyingLogo'
 import ChiSiamo from '@/components/ChiSiamo'
 import Servizi from '@/components/Servizi'
 import Flotta from '@/components/Flotta'
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <FlyingLogo />
       <main id="main-content">
         <Hero />
         <Divider />
