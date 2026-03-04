@@ -122,17 +122,17 @@ export default function ChiSiamo() {
               id="chi-siamo-heading"
               className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-400 text-navy leading-tight mb-8"
             >
-              Matteo Odino,
+              Odino Autotrasporti,
               <br />
-              <span className="font-600 italic">un impegno preciso.</span>
+              <span className="font-600 italic">Trasporti da Dio.</span>
             </h2>
 
             <div className="space-y-5 font-body text-navy/70 text-base lg:text-lg leading-relaxed">
               <p>
-                Odino Autotrasporti nasce a Genova, che porta l&apos;eredità di tre generazioni.
+                Odino Autotrasporti nasce a Genova e porta l&apos;eredità di tre generazioni.
                 La prima odino autotrasporti fondata nel 1947, dal nonno, 
                 per poi passare nel 2006 al figlio Odino Marco ed ora, dal 2023 con Odino Matteo.
-                Un  principio semplice che ha unito tutte le generazioni, affidabilità.
+                Un  principio semplice che ha unito tutte le generazioni: affidabilità.
               </p>
               <p>
                 Da allora la nostra azienda è cresciuta mantenendo intatta l&apos;anima
