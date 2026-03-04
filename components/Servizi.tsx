@@ -38,7 +38,7 @@ const services = [
   {
     title: 'Distribuzione Regionale',
     description:
-      'Servizi di distribuzione capillare in Piemonte e Liguria con furgoni e camion medi. Consegne programmate, orari concordati, flessibilità operativa.',
+      'Servizi di distribuzione capillare a Genova e in Nord Italia con furgoni e camion medi. Consegne programmate, orari concordati, flessibilità operativa.',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-10 h-10">
         <circle cx="24" cy="20" r="10" />
@@ -53,7 +53,7 @@ const services = [
   {
     title: 'Logistica e Stoccaggio',
     description:
-      'Magazzinaggio temporaneo, gestione stock e preparazione ordini presso la nostra sede di Cuneo. Soluzioni flessibili per picchi di domanda.',
+      'Magazzinaggio temporaneo, gestione stock e preparazione ordini presso la nostra sede di Genova. Soluzioni flessibili per picchi di domanda.',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-10 h-10">
         <path d="M4 44V18L24 6l20 12v26" />

@@ -137,9 +137,7 @@ export default function ChiSiamo() {
               <p>
                 Da allora la nostra azienda è cresciuta mantenendo intatta l&apos;anima
                 familiare: decisioni rapide, responsabilità diretta, rispetto per il cliente
-                e per il lavoro degli autisti. Ogni veicolo della flotta è moderno,
-                omologato e condotto da personale certificato ADR e qualificato per merci
-                speciali.
+                e per il lavoro degli autisti.
               </p>
               <p>
                 Operiamo regolarmente su Genova, in tutto il Nord-Italia e su tutto il

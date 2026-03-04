@@ -18,25 +18,25 @@ const sairaCondensed = Saira_Condensed({
 })
 
 export const metadata: Metadata = {
-  title: 'Odino Autotrasporti – Trasporto Merci Professionale dal 1987',
+  title: 'Odino Autotrasporti – Trasporti da Dio dal 1947',
   icons: {
     icon: '/logo.png',
     apple: '/logo.png',
   },
   description:
-    'Odino Autotrasporti Srl: trasporto merci su strada, distribuzione regionale e logistica in Piemonte, Liguria e tutta Italia. Affidabili dal 1987.',
+    'Odino Autotrasporti: trasporto merci su strada, distribuzione regionale e logistica tutta Italia. Affidabili dal 1947.',
   keywords: [
     'trasporto merci',
-    'autotrasporti Cuneo',
-    'trasporto industriale Piemonte',
+    'autotrasporti Genova',
+    'trasporto industriale Nord Italia',
     'distribuzione regionale',
     'logistica Liguria',
     'trasporto su strada Italia',
   ],
   openGraph: {
-    title: 'Odino Autotrasporti – Trasporto Merci Professionale dal 1987',
+    title: 'Odino Autotrasporti – Trasporti da Dio dal 1947',
     description:
-      'Trasporto merci su strada con serietà e puntualità. Flotta moderna, certificazioni ISO, operativi dal 1987.',
+      'Trasporto merci su strada con serietà e puntualità. Operativi dal 1947.',
     type: 'website',
     locale: 'it_IT',
   },
