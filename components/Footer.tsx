@@ -31,15 +31,15 @@ export default function Footer() {
               />
             </div>
             <p className="font-body text-sm text-silver/50 leading-relaxed mb-6 max-w-xs">
-              Trasporto merci su strada in Piemonte, Liguria e tutta Italia.
-              Professionali, affidabili, dal 1987.
+              Odino Autotrasporti.
+              Trasporto merci da Dio.
             </p>
             <div className="space-y-1">
               <p className="font-condensed text-xs tracking-widest uppercase text-silver/30">
-                P.IVA: IT00000000000
+                P.IVA: 02866760990
               </p>
               <p className="font-condensed text-xs tracking-widest uppercase text-silver/30">
-                REA: CN-000000
+                REA:  516536
               </p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Footer() {
             <address className="not-italic space-y-4">
               <div>
                 <p className="font-condensed text-[10px] tracking-[0.3em] uppercase text-silver/30 mb-1">Sede</p>
-                <p className="font-body text-sm text-silver/50">Via Roma 14, Cuneo (CN) 12100</p>
+                <p className="font-body text-sm text-silver/50">Via Cadelè Bricollo, 32A, 16010 Serra Riccò (GE)</p>
               </div>
               <div>
                 <p className="font-condensed text-[10px] tracking-[0.3em] uppercase text-silver/30 mb-1">Telefono</p>
@@ -82,16 +82,16 @@ export default function Footer() {
                   href="tel:+390171000000"
                   className="font-body text-sm text-silver/50 hover:text-gold transition-colors duration-200"
                 >
-                  +39 0171 000000
+                  +39 3471505903
                 </a>
               </div>
               <div>
-                <p className="font-condensed text-[10px] tracking-[0.3em] uppercase text-silver/30 mb-1">Email</p>
+                <p className="font-condensed text-[10px] tracking-[0.3em] uppercase text-silver/30 mb-1">PEC</p>
                 <a
-                  href="mailto:info@odinoautotrasporti.it"
+                  href="mailto:odinomatteo@pec-legal.it"
                   className="font-body text-sm text-silver/50 hover:text-gold transition-colors duration-200 break-all"
                 >
-                  info@odinoautotrasporti.it
+                  odinomatteo@pec-legal.it
                 </a>
               </div>
               <div>
@@ -105,7 +105,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-silver/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-condensed text-xs tracking-widest uppercase text-silver/25 text-center sm:text-left">
-            &copy; 2024 Odino Autotrasporti Srl — Tutti i diritti riservati
+            &copy; ODINO MATTEO — Tutti i diritti riservati
           </p>
           <div className="flex items-center gap-2" aria-hidden="true">
             <span className="block w-4 h-[1px] bg-gold/20" />

@@ -10,9 +10,9 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-  { value: 35, suffix: '+', label: 'Anni di Esperienza', sublabel: 'Dal 1987 sul campo' },
-  { value: 50, suffix: '+', label: 'Veicoli in Flotta', sublabel: 'Sempre aggiornati' },
-  { value: 10000, suffix: '+', label: 'Consegne Effettuate', sublabel: 'Con puntualità' },
+  { value: 70, suffix: '+', label: 'Anni di Esperienza', sublabel: 'Dal 1947 sul campo' },
+  { value: 3, suffix: '', label: 'Generazioni', sublabel: 'di trasporti da Dio' },
+  { value: 3000, suffix: '+', label: 'Consegne Effettuate', sublabel: 'negli ultimi tre anni' },
 ]
 
 function useCountUp(target: number, duration: number, start: boolean) {
@@ -129,10 +129,10 @@ export default function ChiSiamo() {
 
             <div className="space-y-5 font-body text-navy/70 text-base lg:text-lg leading-relaxed">
               <p>
-                Odino Autotrasporti nasce a Genova, dalla
-                visione di un imprenditore che credeva in un principio semplice: la merce
-                consegnata in tempo, in condizioni perfette, è la promessa che distingue
-                un partner affidabile da un semplice fornitore.
+                Odino Autotrasporti nasce a Genova, che porta l'eredità di tre generazioni.
+                La prima odino autotrasporti fondata nel 1947, dal nonno, 
+                per poi passare nel 2006 al figlio Odino Marco ed ora, dal 2023 con Odino Matteo.
+                Un  principio semplice che ha unito tutte le generazioni, affidabilità.
               </p>
               <p>
                 Da allora la nostra azienda è cresciuta mantenendo intatta l&apos;anima
@@ -142,7 +142,7 @@ export default function ChiSiamo() {
                 speciali.
               </p>
               <p>
-                Operiamo regolarmente in Piemonte, Liguria, Lombardia e su tutto il
+                Operiamo regolarmente su Genova, in tutto il Nord-Italia e su tutto il
                 territorio nazionale, con possibilità di servizi internazionali tramite
                 partner certificati. La nostra forza è la continuità: clienti che ci
                 scelgono da decenni, perché sanno che manteniamo le promesse.

@@ -135,8 +135,8 @@ export default function Contatti() {
                 </div>
                 <div>
                   <p className="font-condensed text-xs tracking-[0.3em] uppercase text-gold/70 mb-1">Sede Operativa</p>
-                  <p className="font-body text-navy/80">Via Roma 14</p>
-                  <p className="font-body text-navy/80">Cuneo (CN) 12100</p>
+                  <p className="font-body text-navy/80">Via Cadelè Bricollo, 32A</p>
+                  <p className="font-body text-navy/80">16010 Serra Riccò (GE)</p>
                 </div>
               </div>
 
@@ -149,8 +149,8 @@ export default function Contatti() {
                 </div>
                 <div>
                   <p className="font-condensed text-xs tracking-[0.3em] uppercase text-gold/70 mb-1">Telefono</p>
-                  <a href="tel:+390171000000" className="font-body text-navy/80 hover:text-gold transition-colors duration-200">
-                    +39 
+                  <a href="tel:+393471505903" className="font-body text-navy/80 hover:text-gold transition-colors duration-200">
+                    +39 3471505903
                   </a>
                 </div>
               </div>
@@ -164,8 +164,10 @@ export default function Contatti() {
                 </div>
                 <div>
                   <p className="font-condensed text-xs tracking-[0.3em] uppercase text-gold/70 mb-1">Email</p>
-                  <a href="mailto:info@odinoautotrasporti.it" className="font-body text-navy/80 hover:text-gold transition-colors duration-200 break-all">
-                    info@odinoautotrasporti.it
+                  <a href="mailto:operativo@odinoautotrasporti.it" className="font-body text-navy/80 hover:text-gold transition-colors duration-200 break-all">
+                    operativo@odinoautotrasporti.it
+                    amministrazione@odinoautotrasporti.it
+                    ddt@odinoautotrasporti.it
                   </a>
                 </div>
               </div>
@@ -179,7 +181,7 @@ export default function Contatti() {
                 </div>
                 <div>
                   <p className="font-condensed text-xs tracking-[0.3em] uppercase text-gold/70 mb-1">Orari Ufficio</p>
-                  <p className="font-body text-navy/80">Lun–Ven: 7:00 – 18:00</p>
+                  <p className="font-body text-navy/80">Lun–Ven: 7:00 – 18:00 | Sabato 8:00 - 12:00</p>
                 </div>
               </div>
             </div>
@@ -193,9 +195,9 @@ export default function Contatti() {
                 <span className="font-condensed text-xs tracking-widest uppercase">
                   Genova, Liguria
                 </span>
-                <span className="font-body text-xs text-navy/20">
+                {/* <span className="font-body text-xs text-navy/20">
                   Google Maps — da integrare
-                </span>
+                </span> */}
               </div>
             </div>
           </div>
