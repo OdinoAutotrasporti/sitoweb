@@ -41,6 +41,9 @@ export default function Footer() {
               <p className="font-condensed text-xs tracking-widest uppercase text-silver/30">
                 REA:  516536
               </p>
+              <p className="font-condensed text-xs tracking-widest uppercase text-silver/30">
+                Ragione Sociale: ODINO MATTEO
+              </p>
             </div>
           </div>
 

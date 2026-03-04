@@ -186,7 +186,7 @@ export default function Contatti() {
               </div>
             </div>
 
-            {/* Maps placeholder */}
+            {/* Maps placeholder
             <div className="relative border border-silver/60 overflow-hidden bg-navy/5" style={{ paddingBottom: '56.25%' }}>
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-navy/30">
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -197,9 +197,10 @@ export default function Contatti() {
                 </span>
                 {/* <span className="font-body text-xs text-navy/20">
                   Google Maps — da integrare
-                </span> */}
+                </span>
               </div>
             </div>
+          </div> */}
           </div>
 
           {/* Form */}
