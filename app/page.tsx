@@ -1,7 +1,9 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import FlyingLogo from '@/components/FlyingLogo'
+import TruckProgress from '@/components/TruckProgress'
 import ChiSiamo from '@/components/ChiSiamo'
+import ComeLavoriamo from '@/components/ComeLavoriamo'
 import Servizi from '@/components/Servizi'
 import Contatti from '@/components/Contatti'
 import Footer from '@/components/Footer'
@@ -17,8 +19,11 @@ export default function Home() {
       <FlyingLogo />
       <main id="main-content">
         <Hero />
+        <TruckProgress />
         <Divider />
         <ChiSiamo />
+        <Divider />
+        <ComeLavoriamo />
         <Divider />
         <Servizi />
         <Divider />

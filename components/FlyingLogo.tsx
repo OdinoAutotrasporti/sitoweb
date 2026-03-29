@@ -9,8 +9,8 @@ const NAV_STRIP_H = 20     // h-[20px] on mobile
 const NAVBAR_CENTER_Y = 32 // center of fixed h-16 navbar
 
 // Scroll breakpoints
-const PHASE1_END = 80      // by this scroll offset, logo is at hero-image center (200px)
-const PHASE2_END = 280     // by this offset, logo has floated to navbar (matches Navbar logoProgress=1)
+const PHASE1_END = 180     // by this scroll offset, logo is at hero-image center (200px)
+const PHASE2_END = 330     // by this offset, logo has floated to navbar (matches Navbar logoProgress=1)
 
 const smoothstep = (t: number) => t * t * (3 - 2 * t)
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t

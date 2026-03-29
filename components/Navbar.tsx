@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 const navLinks = [
   { label: 'Chi Siamo', href: '#chi-siamo' },
+  { label: 'Come Lavoriamo', href: '#come-lavoriamo' },
   { label: 'Servizi', href: '#servizi' },
   { label: 'Contatti', href: '#contatti' },
 ]
@@ -17,7 +18,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const NAV_H = 64
-    const FADE_RANGE = 120
+    const FADE_RANGE = 180
 
     const isMobileView = () => window.innerWidth < 640
 
