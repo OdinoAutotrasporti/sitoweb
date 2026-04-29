@@ -1,6 +1,20 @@
 import type { Metadata } from 'next'
 import { Saira, Saira_Condensed } from 'next/font/google'
 import './globals.css'
+import { GoogleAnalytics } from '@next/third-parties/google'
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+      <GoogleAnalytics gaId="G-8N730LXXS2" />
+    </html>
+  )
+}
 
 const saira = Saira({
   subsets: ['latin'],

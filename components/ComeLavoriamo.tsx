@@ -55,7 +55,7 @@ export default function ComeLavoriamo() {
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          Sul campo,
+          Da Dio,
           <br />
           <span className="font-600 italic">ogni giorno.</span>
         </h2>
