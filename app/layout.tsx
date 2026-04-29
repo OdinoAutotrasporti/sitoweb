@@ -132,6 +132,8 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased">{children}</body>
+      {/* Add Google Analytics here - outside the body tag, inside html */}
+      <GoogleAnalytics gaId="G-8N730LXXS2" />
     </html>
   )
 }
