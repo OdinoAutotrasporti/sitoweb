@@ -9,10 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^16.3.5",
     "next": "14.2.35",
     "react": "^18",
-    "react-dom": "^18",
-    "@next/third-parties": "latest"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

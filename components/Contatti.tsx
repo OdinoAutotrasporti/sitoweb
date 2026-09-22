@@ -85,7 +85,7 @@ export default function Contatti() {
                 +39 347 150 5903
               </a>
               <p className="font-condensed text-xs tracking-[0.3em] uppercase text-gold/70 mb-1">Ufficio Operativo</p>
-              <a href="tel:+393471505903" className="font-body text-navy/80 hover:text-gold transition-colors duration-200">
+              <a href="tel:+393335054451" className="font-body text-navy/80 hover:text-gold transition-colors duration-200">
                 +39 333 505 4451
               </a>
             </div>
